@@ -5,12 +5,6 @@
 
 void ShowAreaRange(int k)
 {
-if (k < 1 || k > 4)
-{
-      Console.WriteLine("Area number could be only from 1 to 4");
-} 
-else 
-{
       switch (k)
       {
             case 1:
@@ -25,9 +19,11 @@ else
             case 4:    
                   Console.WriteLine ("Range of possible coordinates is x > 0 and y < 0");  
                   break;
+            default:  
+                  Console.WriteLine("Area number could be only from 1 to 4");
+                  break;
       }
-}  
-}
+}      
 //------------------------------------------
 
 Console.Write("Put Area number ");
