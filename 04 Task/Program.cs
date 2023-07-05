@@ -8,12 +8,6 @@ double GetDistanceBetweenTwoPoints(double x1, double x2, double y1, double y2)
 
 }
 
-
-
-
-
-
-
 //--------------------------------------
 Console.Write("Please, enter X1:");
 double x1 = double.Parse(Console.ReadLine());
