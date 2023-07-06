@@ -11,11 +11,12 @@ int Prompt(string message)
       return result;
 }
 
-double Pin3D(double x1, double y1, double z1, double x2, double y2, double z2)
+double Pin3D(double FirstpinX, double FirstpinY, double FirstpinZ, double SecondPinX, double SecondPinY, double SecondPinZ)
 {
-      return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+      return Math.Sqrt(Math.Pow(SecondPinX - FirstpinX, 2) + Math.Pow(SecondPinY - FirstpinY, 2) + Math.Pow(SecondPinZ - FirstpinZ, 2));
 }
 
+//Программа
 int x1 = Prompt("Please, enter 1 PIN X coordinate:");
 int y1 = Prompt("Please, enter 1 PIN Y coordinate:");
 int z1 = Prompt("Please, enter 1 PIN Z coordinate:");
